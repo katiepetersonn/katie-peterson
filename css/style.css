@@ -18,7 +18,7 @@ body {
 h1 {
   font-style: bold;
   text-align: center;
-  font-size: 4em;
+  font-size: 4.5em;
   color: #FF3652;
 }
 
@@ -31,6 +31,7 @@ h2 {
 
 p {
   font-size: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .red {
@@ -50,7 +51,7 @@ nav {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background-color: #FFE8DD ;
+  background-color: #FFF2F3 ;
 }
 
 nav ul {
@@ -67,17 +68,26 @@ nav ul li {
 
 a#logo-container {
   color: #FF3652;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   color:  #FF3652;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
 }
 
 /*hero*/
 
 #name {
   color: #525252;
+  /*color: white;*/
+}
+
+.wiggle {
+  margin-left: 45%;
+  margin-top: 5%;
 }
 
 /*parallax*/
@@ -87,14 +97,14 @@ a {
   height: 100vh;
   /*background-color: #FF3652;*/
   /*background-color: #FFF2F3;*/
-  background-color: #FFE8DD;
+  background-color: #FFF2F3;
   /*background-color: white;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
 /*.parallax-container-about {
@@ -119,9 +129,9 @@ a {
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 20%, 1600px 80%, 0 100%);
 }*/
-
-/*.parallax-container-contact {
-  height: 100vh;
+/*
+.parallax-container-contact {
+  height: 200vh;
   background-color: #FFE8DD;
   background-attachment: fixed;
   background-position: center;
@@ -143,8 +153,9 @@ a {
 /*about me section*/
 
 #about-me {
+  padding-left: 30px;
   width: 100%;
-  height: auto;
+  /*height: 80vh;*/
   text-align: center;
   /*border: 5px solid yellow;*/
   display: inline-block;
@@ -153,22 +164,35 @@ a {
 .circle-image > img {
   border-radius: 100px;
   height: 250px;
-  margin-top: 25%;
-  margin-bottom: 25%;
+  margin-top: 15%;
+  border: 8px solid #FF3652;
+  border-style: dotted
+  /*margin-bottom: 25%;*/
 }
 
 .whitebox {
   display: inline-block;
   margin-top: 10px;
+  border-radius: 25%;
   background: #FF3652;
-  height: 98%;
+  height: 50%;
   width: 50%;
+
 }
+
 
 .about-me-paragraph {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 5%;
+}
+
+.small-circle{
+  background: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: auto;
 }
 
 a.contact-links {
@@ -186,19 +210,24 @@ a.contact-links:hover {
   margin-top: 10px;
   text-align: center;
   height: auto;
+  background-color: #FFF2F3;
   /*border: 1px solid black;*/
   position: relative;
   display: inline-block;
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
+  clip-path: polygon(0 0, 100% 6%, 100% 92%, 0 100%);
 }
 
 .circle {
   /*border: 1.5px solid #FF3652;*/
-  color: #FF3652;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #FFF2F3;
   font-size: 1.25em;
   line-height: 6.5;
   text-align: center;
   display: inline-block;
-  background-color: #FFE8DD;
+  background-color: #FF3652;
   /*background-color: #FFF2F3;*/
   border-radius: 50%;
   width: 130px;
@@ -206,23 +235,13 @@ a.contact-links:hover {
   margin: 20px;
 }
 
-.circle-two {
-  color: white;
-  font-size: 1.25em;
-  line-height: 6.5;
-  text-align: center;
-  display: inline-block;
-  background-color: #FF3652;
-  background-color: ;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  margin: 20px;
+.circle-container {
+  margin-bottom: 30px;
 }
 
 .circle:hover {
-  background-color: #FF3652;
-  color: white
+  background-color: #FFF2F3;
+  color: #FF3652;
 }
 
 .circle-two:hover {
@@ -251,10 +270,12 @@ img.project-images {
   width: calc(100% / 2);
   min-height: 200px;
   float: left;
-  /*border: 1px solid black;*/
+  /*border: 2px solid #FF3652;*/
+  /*background: #FF3652;*/
   box-sizing: border-box;
   padding: 10px 20px;
   text-align: center;
+  /*margin: 10px;*/
 }
 
 /*Columns*/
@@ -265,7 +286,7 @@ img.project-images {
   -ms-transition: width 0.5s;
   -o-transition: width 0.5s;
   transition: width 0.5s;
-  border-radius: 5px;
+  border-radius: 35px;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -295,10 +316,19 @@ img.project-images {
 .hr {
   width: 250px;
   align: center;
-  border-top: 3px solid #FFE8DD;
+  border-top: 5px solid #FFF3F3;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.red-hr {
+    width: 250px;
+    align: center;
+    border-top: 3px solid #FF3652;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .about-hr {
@@ -315,10 +345,14 @@ img.project-images {
   padding: 10px;
   margin-top: 20px;
   text-align: center;
-  height: 50vh;
+  background: #FFF3F3;
+  /*height: 50vh;*/
   /*border: 3px solid green;*/
   position: relative;
   display: inline-block;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 90%, 0 90%);
+  clip-path: polygon(0 0, 1600px 10%, 1600px 100%, 0 100%);
 }
 
 
@@ -332,3 +366,51 @@ footer {
 }
 
 /*containter for testing */
+
+/*form*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #FF3652;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #FFF3F3;
+    color: #FF3652;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    width: 60%;
+    border-radius: 5px;
+    background-color: #FFF3F3;
+    padding: 20px;
+}
+
+footer {
+    /*border-top: 2px solid #FF3652 ;*/
+    color: #FF3652;
+    margin-top: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FFF3F3 ;
+}
