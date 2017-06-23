@@ -10,6 +10,7 @@
   width: 90%;
 }
 
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
@@ -47,11 +48,22 @@ p {
 }
 /* -- nav-bar--*/
 
+.navbar-fixed nav {
+  position: fixed;
+}
+
 nav {
+  position: relative;
+  height: 60px;
+  z-index: 997;
+  /*position: fixed;*/
+  overflow: hidden;
   width: 100%;
   height: 50px;
   line-height: 50px;
+
   background-color: #FFF2F3 ;
+  /*background-color: yellow ;*/
 }
 
 nav ul {
@@ -94,7 +106,9 @@ a {
 
 
 .parallax-container-intro {
+  overflow: hidden;
   height: 100vh;
+  /*margin-top: 10px;*/
   /*background-color: #FF3652;*/
   /*background-color: #FFF2F3;*/
   background-color: #FFF2F3;
