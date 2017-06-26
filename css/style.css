@@ -201,7 +201,6 @@ a {
   margin-top: 0px;
 }
 
-
 /*SKILL SECTION*/
 
 #skills {
@@ -269,15 +268,14 @@ img.project-images {
 .col {
   width: calc(100% / 2);
   min-height: 80vh;
+  max-width: 100%;
   float: left;
-  /*border: 2px solid #FF3652;*/
   box-sizing: border-box;
   padding: 20px 20px;
   text-align: center;
 }
 
-
-/*Columns*/
+/*COLUMNS*/
 
 .row {
   clear: both;
@@ -287,15 +285,6 @@ img.project-images {
   width: calc( 6 / 12 * 100% );
 }
 
-.hr {
-  width: 250px;
-  align: center;
-  border-top: 5px solid #FFF3F3;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
 .red-hr {
     width: 250px;
     align: center;
@@ -303,14 +292,6 @@ img.project-images {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
-}
-
-.about-hr {
-  width: 250px;
-  border-top: 3px solid #FFE8DD;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 30%;
 }
 
 .button {
@@ -339,12 +320,9 @@ img.project-images {
   position: relative;
   display: inline-block;
   position: relative;
-  /*-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 90%, 0 90%);*/
-  /*clip-path: polygon(0 0, 1600px 10%, 1600px 100%, 0 100%);*/
 }
 
 footer {
-    /*border-top: 2px solid #FF3652 ;*/
     color: #525252;
     font-size: 0.75em;
     text-align: center;
@@ -355,9 +333,7 @@ footer {
     background-color: #FFF3F3 ;
 }
 
-
-
-/* /// RESPONSIVE FONT & GRIDS START /// */
+/*RESPONSIVE*/
 .row {
   clear: both;
 }
@@ -367,8 +343,7 @@ footer {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
-  box-sizing: border-box;
-
+  box-sizing: border-box
   float: left;
   min-height: 50px;
 }
@@ -384,52 +359,8 @@ footer {
     width: 100%;
   }
 
-  .lg-col-9 {
-    width: 75%;
-  }
-
-  .lg-col-8 {
-    width: -webkit-calc(100% / 12 * 8);
-    width: -moz-calc(100% / 12 * 8);
-    width: -ms-calc(100% / 12 * 8);
-    width: -o-calc(100% / 12 * 8);
-    width: calc(100% / 12 * 8);
-  }
-
-  .lg-col-7 {
-    width: -webkit-calc(100% / 12 * 7);
-    width: -moz-calc(100% / 12 * 7);
-    width: -ms-calc(100% / 12 * 7);
-    width: -o-calc(100% / 12 * 7);
-    width: calc(100% / 12 * 7);
-  }
-
   .lg-col-6 {
     width: 50%;
-  }
-
-  .lg-col-5 {
-    width: -webkit-calc(100% / 12 * 5);
-    width: -moz-calc(100% / 12 * 5);
-    width: -ms-calc(100% / 12 * 5);
-    width: -o-calc(100% / 12 * 5);
-    width: calc(100% / 12 * 5);
-  }
-
-  .lg-col-4 {
-    width: -webkit-calc(100% / 3);
-    width: -moz-calc(100% / 3);
-    width: -ms-calc(100% / 3);
-    width: -o-calc(100% / 3);
-    width: calc( 100% / 3 );
-  }
-
-  .lg-col-3 {
-    width: 25%;
-  }
-
-  .lg-col-3-offset {
-    margin-left: 25%;
   }
 
   .skills img  {
@@ -438,36 +369,10 @@ footer {
     margin: 8px 14.5px;
   }
 
-  .aprilia {
-    height: 80vh;
-    overflow: hidden;
-  }
-
-  .aprilia img {
-    margin-top: -120px;
-    width: 100vw;
-  }
-
-  .motoguzzi img {
+  .skills circle {
     margin: 0 auto;
     padding-top: 33px;
     width: 100%;
-  }
-
-  .wireframe img {
-    margin: 0 auto;
-    padding-top: 25px;
-    width: 100%;
-  }
-
-  .waste-not img {
-    margin: 0 auto;
-    padding-top: 25px;
-    width: 100%;
-  }
-
-  #waste-not {
-    height: 468px;
   }
 
 }
@@ -487,75 +392,8 @@ footer {
     width: 100%;
   }
 
-  .md-col-9 {
-    width: 75%;
-  }
-
-  .md-col-8 {
-    width: -webkit-calc(100% / 12 * 8);
-    width: -moz-calc(100% / 12 * 8);
-    width: -ms-calc(100% / 12 * 8);
-    width: -o-calc(100% / 12 * 8);
-    width: calc(100% / 12 * 8);
-  }
-
-  .md-col-7 {
-    width: -webkit-calc(100% / 12 * 7);
-    width: -moz-calc(100% / 12 * 7);
-    width: -ms-calc(100% / 12 * 7);
-    width: -o-calc(100% / 12 * 7);
-    width: calc(100% / 12 * 7);
-  }
-
   .md-col-6 {
     width: 50%;
-  }
-
-  .md-col-5 {
-    width: -webkit-calc(100% / 12 * 5);
-    width: -moz-calc(100% / 12 * 5);
-    width: -ms-calc(100% / 12 * 5);
-    width: -o-calc(100% / 12 * 5);
-    width: calc(100% / 12 * 5);
-  }
-
-  .md-col-4 {
-    width: -webkit-calc(100% / 3);
-    width: -moz-calc(100% / 3);
-    width: -ms-calc(100% / 3);
-    width: -o-calc(100% / 3);
-    width: calc( 100% / 3 );
-  }
-
-  .md-col-3 {
-    width: 25%;
-  }
-
-  .skills img  {
-    width: 80px;
-    display: inline-block;
-    margin: 7px 14.5px;
-  }
-
-  .aprilia img {
-    width: 100vw;
-  }
-
-  .motoguzzi img {
-    margin: 0 auto;
-    width: 100%;
-    padding-bottom: 60px;
-  }
-
-  .wireframe img {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .waste-not img {
-    margin: 0 auto;
-    padding-top: 25px;
-    width: 100%;
   }
 
   #contact .info {
@@ -579,84 +417,15 @@ footer {
     width: 100%;
   }
 
-  .sm-col-9 {
-    width: 75%;
-  }
-
-  .sm-col-8 {
-    width: -webkit-calc(100% / 12 * 8);
-    width: -moz-calc(100% / 12 * 8);
-    width: -ms-calc(100% / 12 * 8);
-    width: -o-calc(100% / 12 * 8);
-    width: calc(100% / 12 * 8);
-  }
-
-  .sm-col-7 {
-    width: -webkit-calc(100% / 12 * 7);
-    width: -moz-calc(100% / 12 * 7);
-    width: -ms-calc(100% / 12 * 7);
-    width: -o-calc(100% / 12 * 7);
-    width: calc(100% / 12 * 7);
-  }
-
   .sm-col-6 {
     width: 50%;
   }
 
-  .sm-col-5 {
-    width: -webkit-calc(100% / 12 * 5);
-    width: -moz-calc(100% / 12 * 5);
-    width: -ms-calc(100% / 12 * 5);
-    width: -o-calc(100% / 12 * 5);
-    width: calc(100% / 12 * 5);
-  }
-
-  .sm-col-4 {
-    width: -webkit-calc(100% / 3);
-    width: -moz-calc(100% / 3);
-    width: -ms-calc(100% / 3);
-    width: -o-calc(100% / 3);
-    width: calc( 100% / 3 );
-  }
-
-  .sm-col-3 {
-    width: 25%;
-  }
-
-  .skills img  {
-    width: 76px;
-    display: inline-block;
-    margin: 7px 14.5px;
-  }
-
-  .aprilia img {
-    width: 100vw;
-  }
-
-  .motoguzzi img {
-    margin: 0 auto;
+  .column {
     width: 100%;
-    padding-bottom: 60px;
   }
 
-  .wireframe img {
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 60px;
-  }
-
-  .waste-not img {
-    margin: 0 auto;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  #contact .info {
-    padding-bottom: 0;
-  }
-
-  #contact .beginning {
-    padding-top: 0;
-  }
+  .col {
+    width: calc(100% );
 }
 /* /// RESPONSIVE FONT & GRIDS END /// */
