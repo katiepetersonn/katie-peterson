@@ -14,6 +14,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
+  /*color: 	#F5F5F5;*/
 }
 
 h1 {
@@ -94,7 +95,6 @@ a {
 
 #name {
   color: #525252;
-  /*color: white;*/
 }
 
 .wiggle {
@@ -104,56 +104,17 @@ a {
 
 /*parallax*/
 
-
 .parallax-container-intro {
   overflow: hidden;
   height: 100vh;
-  /*margin-top: 10px;*/
-  /*background-color: #FF3652;*/
-  /*background-color: #FFF2F3;*/
   background-color: #FFF2F3;
-  /*background-color: white;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
+  /*clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);*/
 }
-
-/*.parallax-container-about {
-  height: 100vh;
-  background-color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-}*/
-
-/*.parallax-container-skills {
-  width: 100%;
-  height: 100vh;
-  background-color: #FF3652;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-  clip-path: polygon(0 0, 1600px 20%, 1600px 80%, 0 100%);
-}*/
-/*
-.parallax-container-contact {
-  height: 200vh;
-  background-color: #FFE8DD;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-  clip-path: polygon(0 0, 1600px 20%, 1600px 80%, 0 100%);
-}*/
 
 .header {
   position: absolute;
@@ -196,7 +157,7 @@ a {
 
 
 .about-me-paragraph {
-  color: white;
+  color: #fdfdfd;
   font-size: 1em;
   margin: 5%;
 }
@@ -229,7 +190,7 @@ a.contact-links:hover {
   position: relative;
   display: inline-block;
   /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
-  clip-path: polygon(0 0, 100% 6%, 100% 92%, 0 100%);
+  /*clip-path: polygon(0 0, 100% 6%, 100% 92%, 0 100%);*/
 }
 
 .circle {
@@ -282,12 +243,12 @@ img.project-images {
 
 .col {
   width: calc(100% / 2);
-  min-height: 200px;
+  min-height: auto;
   float: left;
   /*border: 2px solid #FF3652;*/
   /*background: #FF3652;*/
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-align: center;
   /*margin: 10px;*/
 }
@@ -295,19 +256,6 @@ img.project-images {
 /*Columns*/
 
 .column {
-  -webkit-transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  -ms-transition: width 0.5s;
-  -o-transition: width 0.5s;
-  transition: width 0.5s;
-  border-radius: 35px;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-
   float: left;
   /*border: 1px solid black;*/
   margin-top: 0px;
@@ -321,11 +269,6 @@ img.project-images {
 .lg-col-6 {
   width: calc( 6 / 12 * 100% );
 }
-
-/*.lg-col-8{
-  width: calc( 8 / 12 * 100% );
-}*/
-
 
 .hr {
   width: 250px;
@@ -353,6 +296,24 @@ img.project-images {
   margin-left: 30%;
 }
 
+.button {
+  border: 2px solid #FFE8DD;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 10px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.button:hover {
+  border: 2px solid #FF3652;
+  /*color: #FF3652;*/
+}
+
+
 
 .contact {
   width: 100%;
@@ -360,71 +321,21 @@ img.project-images {
   margin-top: 20px;
   text-align: center;
   background: #FFF3F3;
-  /*height: 50vh;*/
-  /*border: 3px solid green;*/
   position: relative;
   display: inline-block;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 90%, 0 90%);
-  clip-path: polygon(0 0, 1600px 10%, 1600px 100%, 0 100%);
-}
-
-
-footer {
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-  height: 30vh;
-  position: relative;
-  display: inline-block;
-}
-
-/*containter for testing */
-
-/*form*/
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #FF3652;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #FFF3F3;
-    color: #FF3652;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    width: 60%;
-    border-radius: 5px;
-    background-color: #FFF3F3;
-    padding: 20px;
+  /*-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 90%, 0 90%);*/
+  /*clip-path: polygon(0 0, 1600px 10%, 1600px 100%, 0 100%);*/
 }
 
 footer {
     /*border-top: 2px solid #FF3652 ;*/
-    color: #FF3652;
+    color: #525252;
+    font-size: 0.75em;
+    text-align: center;
     margin-top: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     line-height: 50px;
     background-color: #FFF3F3 ;
 }
