@@ -44,10 +44,15 @@ p {
   color: #FFF2F3;
 }
 
-.black {
+.fullstop {
   color: #525252;
 }
-/* -- nav-bar--*/
+
+.bold {
+  font-weight: bold;
+}
+
+/*NAV BAR*/
 
 .navbar-fixed nav {
   position: fixed;
@@ -57,14 +62,11 @@ nav {
   position: relative;
   height: 60px;
   z-index: 997;
-  /*position: fixed;*/
   overflow: hidden;
   width: 100%;
   height: 50px;
   line-height: 50px;
-
   background-color: #FFF2F3 ;
-  /*background-color: yellow ;*/
 }
 
 nav ul {
@@ -79,9 +81,9 @@ nav ul li {
   font-size: 1em;
 }
 
-a#logo-container {
-  color: #FF3652;
-  font-family: 'Roboto', sans-serif;
+nav, nav span.button-collapse i {
+  color: #4b576e;
+  line-height: 70px;
 }
 
 a {
@@ -91,7 +93,42 @@ a {
   margin: 10px;
 }
 
-/*hero*/
+/*SIDE NAV*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding-left: 32px;
+    text-decoration: none;
+    color: #525252;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus, nav ul a:hover{
+    background-color: #FFF2F3;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*HERO*/
 
 #name {
   color: #525252;
@@ -102,9 +139,9 @@ a {
   margin-top: 5%;
 }
 
-/*parallax*/
+/*INTRO*/
 
-.parallax-container-intro {
+.intro {
   overflow: hidden;
   height: 100vh;
   background-color: #FFF2F3;
@@ -112,8 +149,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
-  /*clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);*/
 }
 
 .header {
@@ -125,14 +160,16 @@ a {
   text-align: center;
 }
 
-/*about me section*/
+/*ABOUT ME SECTION*/
+
+.about {
+  background: #FFFFFD;
+}
 
 #about-me {
   padding-left: 30px;
   width: 100%;
-  /*height: 80vh;*/
   text-align: center;
-  /*border: 5px solid yellow;*/
   display: inline-block;
 }
 
@@ -140,45 +177,32 @@ a {
   border-radius: 100px;
   height: 250px;
   margin-top: 15%;
-  border: 8px solid #FF3652;
+  border: 4px solid #FF3652;
   border-style: dotted
-  /*margin-bottom: 25%;*/
 }
 
 .whitebox {
   display: inline-block;
   margin-top: 10px;
   border-radius: 25%;
-  background: #FF3652;
   height: 50%;
   width: 50%;
-
 }
 
-
 .about-me-paragraph {
-  color: #fdfdfd;
+  text-align: left;
+  color: #525252;
   font-size: 1em;
   margin: 5%;
 }
 
-.small-circle{
-  background: white;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  margin: auto;
+.column {
+  float: left;
+  margin-top: 0px;
 }
 
-a.contact-links {
-  color: white;
-}
 
-a.contact-links:hover {
-  color: #FFE8DD;
-}
-
-/*skill section*/
+/*SKILL SECTION*/
 
 #skills {
   width: 100%;
@@ -186,15 +210,11 @@ a.contact-links:hover {
   text-align: center;
   height: auto;
   background-color: #FFF2F3;
-  /*border: 1px solid black;*/
   position: relative;
   display: inline-block;
-  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
-  /*clip-path: polygon(0 0, 100% 6%, 100% 92%, 0 100%);*/
 }
 
 .circle {
-  /*border: 1.5px solid #FF3652;*/
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   color: #FFF2F3;
@@ -224,43 +244,40 @@ a.contact-links:hover {
   color: #FF3652;
 }
 
-/*Projects*/
+/*PROJECT SECTION*/
 
-
-.projects {
-  /*width: 80%;*/
-  max-width: 960px;
-  padding: 10px 20px;
-  margin: 0 auto;
-  position: relative;
-  height: auto;
+.project {
+  background: #FFFFFD;
 }
 
 img.project-images {
   width: 400px;
 }
 
+.black {
+  color: #525252;
+  max-width: 80%;
+  text-align: left;
+  margin-left: 12%;
+}
+
+.black a {
+  text-decoration: none;
+  margin: auto;
+}
 
 .col {
   width: calc(100% / 2);
-  min-height: auto;
+  min-height: 80vh;
   float: left;
   /*border: 2px solid #FF3652;*/
-  /*background: #FF3652;*/
   box-sizing: border-box;
   padding: 20px 20px;
   text-align: center;
-  /*margin: 10px;*/
 }
+
 
 /*Columns*/
-
-.column {
-  float: left;
-  /*border: 1px solid black;*/
-  margin-top: 0px;
-}
-
 
 .row {
   clear: both;
@@ -313,8 +330,6 @@ img.project-images {
   /*color: #FF3652;*/
 }
 
-
-
 .contact {
   width: 100%;
   padding: 10px;
@@ -339,3 +354,309 @@ footer {
     line-height: 50px;
     background-color: #FFF3F3 ;
 }
+
+
+
+/* /// RESPONSIVE FONT & GRIDS START /// */
+.row {
+  clear: both;
+}
+
+.column {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  float: left;
+  min-height: 50px;
+}
+
+
+/* DESKTOP MEDIA QUERY */
+@media only screen and (max-width: 1560px) and (min-width: 1281px) {
+  .hide-on-monitor {
+    display: none;
+  }
+
+  .lg-col-12 {
+    width: 100%;
+  }
+
+  .lg-col-9 {
+    width: 75%;
+  }
+
+  .lg-col-8 {
+    width: -webkit-calc(100% / 12 * 8);
+    width: -moz-calc(100% / 12 * 8);
+    width: -ms-calc(100% / 12 * 8);
+    width: -o-calc(100% / 12 * 8);
+    width: calc(100% / 12 * 8);
+  }
+
+  .lg-col-7 {
+    width: -webkit-calc(100% / 12 * 7);
+    width: -moz-calc(100% / 12 * 7);
+    width: -ms-calc(100% / 12 * 7);
+    width: -o-calc(100% / 12 * 7);
+    width: calc(100% / 12 * 7);
+  }
+
+  .lg-col-6 {
+    width: 50%;
+  }
+
+  .lg-col-5 {
+    width: -webkit-calc(100% / 12 * 5);
+    width: -moz-calc(100% / 12 * 5);
+    width: -ms-calc(100% / 12 * 5);
+    width: -o-calc(100% / 12 * 5);
+    width: calc(100% / 12 * 5);
+  }
+
+  .lg-col-4 {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -o-calc(100% / 3);
+    width: calc( 100% / 3 );
+  }
+
+  .lg-col-3 {
+    width: 25%;
+  }
+
+  .lg-col-3-offset {
+    margin-left: 25%;
+  }
+
+  .skills img  {
+    width: 90px;
+    display: inline-block;
+    margin: 8px 14.5px;
+  }
+
+  .aprilia {
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  .aprilia img {
+    margin-top: -120px;
+    width: 100vw;
+  }
+
+  .motoguzzi img {
+    margin: 0 auto;
+    padding-top: 33px;
+    width: 100%;
+  }
+
+  .wireframe img {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .waste-not img {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  #waste-not {
+    height: 468px;
+  }
+
+}
+
+/* TABLET MEDIA QUERY */
+@media only screen and (max-width: 1280px) and (min-width: 841px) {
+  nav .brand-logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .md-col-12 {
+    width: 100%;
+  }
+
+  .md-col-9 {
+    width: 75%;
+  }
+
+  .md-col-8 {
+    width: -webkit-calc(100% / 12 * 8);
+    width: -moz-calc(100% / 12 * 8);
+    width: -ms-calc(100% / 12 * 8);
+    width: -o-calc(100% / 12 * 8);
+    width: calc(100% / 12 * 8);
+  }
+
+  .md-col-7 {
+    width: -webkit-calc(100% / 12 * 7);
+    width: -moz-calc(100% / 12 * 7);
+    width: -ms-calc(100% / 12 * 7);
+    width: -o-calc(100% / 12 * 7);
+    width: calc(100% / 12 * 7);
+  }
+
+  .md-col-6 {
+    width: 50%;
+  }
+
+  .md-col-5 {
+    width: -webkit-calc(100% / 12 * 5);
+    width: -moz-calc(100% / 12 * 5);
+    width: -ms-calc(100% / 12 * 5);
+    width: -o-calc(100% / 12 * 5);
+    width: calc(100% / 12 * 5);
+  }
+
+  .md-col-4 {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -o-calc(100% / 3);
+    width: calc( 100% / 3 );
+  }
+
+  .md-col-3 {
+    width: 25%;
+  }
+
+  .skills img  {
+    width: 80px;
+    display: inline-block;
+    margin: 7px 14.5px;
+  }
+
+  .aprilia img {
+    width: 100vw;
+  }
+
+  .motoguzzi img {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .wireframe img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .waste-not img {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  #contact .info {
+    padding-bottom: 0;
+  }
+
+}
+
+/* PHONE MEDIA QUERY */
+@media screen and (max-width: 840px) {
+  nav .brand-logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .sm-col-12 {
+    width: 100%;
+  }
+
+  .sm-col-9 {
+    width: 75%;
+  }
+
+  .sm-col-8 {
+    width: -webkit-calc(100% / 12 * 8);
+    width: -moz-calc(100% / 12 * 8);
+    width: -ms-calc(100% / 12 * 8);
+    width: -o-calc(100% / 12 * 8);
+    width: calc(100% / 12 * 8);
+  }
+
+  .sm-col-7 {
+    width: -webkit-calc(100% / 12 * 7);
+    width: -moz-calc(100% / 12 * 7);
+    width: -ms-calc(100% / 12 * 7);
+    width: -o-calc(100% / 12 * 7);
+    width: calc(100% / 12 * 7);
+  }
+
+  .sm-col-6 {
+    width: 50%;
+  }
+
+  .sm-col-5 {
+    width: -webkit-calc(100% / 12 * 5);
+    width: -moz-calc(100% / 12 * 5);
+    width: -ms-calc(100% / 12 * 5);
+    width: -o-calc(100% / 12 * 5);
+    width: calc(100% / 12 * 5);
+  }
+
+  .sm-col-4 {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: -ms-calc(100% / 3);
+    width: -o-calc(100% / 3);
+    width: calc( 100% / 3 );
+  }
+
+  .sm-col-3 {
+    width: 25%;
+  }
+
+  .skills img  {
+    width: 76px;
+    display: inline-block;
+    margin: 7px 14.5px;
+  }
+
+  .aprilia img {
+    width: 100vw;
+  }
+
+  .motoguzzi img {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .wireframe img {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .waste-not img {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  #contact .info {
+    padding-bottom: 0;
+  }
+
+  #contact .beginning {
+    padding-top: 0;
+  }
+}
+/* /// RESPONSIVE FONT & GRIDS END /// */

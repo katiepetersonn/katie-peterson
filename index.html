@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 </head>
@@ -17,173 +17,188 @@
 <body>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing" target="_blank">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-
-                </ul>
-        </nav>
-        </div>
-        <div class="main">
-
-
-            <div class="parallax-container-intro">
-                <div class="header">
-                    <h1>Hello World<span class="black">.</span> I am <span id = "name">Katie,</span> a junior web developer living in Sydney.</h1>
-                    <img class="wiggle" src="assets/wiggle.gif">
+            <div class="container">
+                <div id="side-nav" class="sidenav">
+                    <span class="closebtn" onclick="closeNav()"><i class="material-icons">clear</i></span>
+                    <a href="#about">About</a>
+                    <a href="#wireframe">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing" target="_blank">Resume</a>
                 </div>
-            </div>
 
-            <div class="parallax-container-about">
+                <span style="cursor:pointer" class="hide-on-monitor button-collapse left" onclick="openNav()"><i class="material-icons">menu</i></span>
+
+                <ul class="right">
+                    <li class="hide-on-tablet hide-on-mobile"><a href="#about">About</a></li>
+                    <li class="hide-on-tablet hide-on-mobile"><a href="#projects">Projects</a></li>
+                    <li class="hide-on-tablet hide-on-mobile"><a href="#contact">Contact</a></li>
+                    <li class="hide-on-tablet hide-on-mobile"><a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="main">
+
+
+        <div class="intro">
+            <div class="header">
+                <h1>Hello World<span class="fullstop">.</span> I am <span id="name">Katie,</span> a full-stack web developer living in Sydney.</h1>
+                <img class="wiggle" src="assets/wiggle.gif">
+
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div id="about-me" class="row">
                 <div class="section-heading">
                     <h2 id="about" class="red">Hi, hey, hello</h2>
                 </div>
-                    <hr class="red-hr">
-                <div id="about-me" class="row">
+                <hr class="red-hr">
 
-                    <div class="whitebox lg-col-6 column">
-                        <div class="about-me-paragraph">
+                <div class="whitebox lg-col-6 column">
+                    <div class="about-me-paragraph">
 
-                            <div class="small-circle"></div>
-                            <br>
-                            <p>
-                                I am Katie.
-                            </p>
+                        <br>
+                        <p>
+                            I am <span class="bold">Katie.</span>
+                        </p>
 
-                            <br>
-                            <p>
-                                I am a junior web developer living in Sydney.
-                            </p>
-                            <br/>
-                            <p>
-                                As a graduate of General Assembly's Web Development Immersive program, I approach code with a think-outside-the-box mindset. I am driven by curiousity and finding out how things work, which has led to a life-long love of learning.
-                            </p>
-                            <br/>
-                            <p>
-                                I love building creative applications that solve real-world problems. I am passionate about teaching children to code and increasing female participation in STEM.
-                                <br />
-                            </p>
-                            <br/>
-                            <p>
-                                When I'm not deep-diving into code, you can find me collecting houseplants, practising yoga, roller-skating, covered in ink from typography, or snuggled on a couch with a good book.
-                            </p>
-                            <br/>
-                            <p>
-                                Let's chat and work together!
-                            </p>
+                        <br>
+                        <p>
+                            I am a <span class="bold">full-stack web developer</span> living in Sydney.
+                        </p>
+                        <br/>
+                        <p>
+                            As a graduate of General Assembly's Web Development Immersive program, I approach code with a <span class="bold">think-outside-the-box</span> mindset. I am driven by <span class="bold">curiousity</span> and finding out how
+                            things work, which has led to a life-long love of learning.
+                        </p>
+                        <br/>
+                        <p>
+                            I love building <span class="bold">creative</span> applications that solve real-world problems. I am <span class="bold">passionate</span> about teaching children to code and increasing female participation in technology.
+                            <br />
+                        </p>
+                        <br/>
+                        <p>
+                            When I'm not deep-diving into code, you can find me collecting houseplants, practising yoga, roller-skating, covered in ink from typography, or snuggled on a couch with a good book.
+                        </p>
+                        <br/>
+                        <p>
+                            Let's chat and work together!
 
-                            <hr class="about-hr">
+                        </p>
+                        <br>
 
-                            <br>
-                            <div class="icons">
-                                <a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing">
-                                    <img src="assets/document.png" alt="" width="35px">
-                                </a>
-                                <a href="https://github.com/katiepetersonn">
-                                    <img src="assets/github.svg" alt="" width="35px">
-                                </a>
-                                <a href="https://twitter.com/katiepeters0n">
-                                    <img src="assets/social_twitter_circle.svg" alt="">
-                                </a>
-                                <a href="http://instagram.com/katiepeters0n">
-                                    <img src="assets/social_instagram_circle.svg" alt="">
-                                </a>
-                                <a href="https://www.linkedin.com/in/katie-peterson-9b568957?trk=hp-identity-photo">
-                                    <img src="assets/social_linkedin_circle.svg" alt="">
-                                </a>
-                                <a href="mailto:katie.peterson19@gmail.com">
-                                    <img src="assets/icon_mail.svg">
-                                </a>
 
-                            </div>
+                        <br>
+                        <div class="icons">
+                            <a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing">
+                                <img src="assets/document.png" alt="" width="35px">
+                            </a>
+                            <a href="https://github.com/katiepetersonn">
+                                <img src="assets/github.svg" alt="" width="35px">
+                            </a>
+                            <a href="https://twitter.com/katiepeters0n">
+                                <img src="assets/social_twitter_circle.svg" alt="">
+                            </a>
+                            <a href="http://instagram.com/katiepeters0n">
+                                <img src="assets/social_instagram_circle.svg" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/katie-peterson-9b568957?trk=hp-identity-photo">
+                                <img src="assets/social_linkedin_circle.svg" alt="">
+                            </a>
+                            <a href="mailto:katie.peterson19@gmail.com">
+                                <img src="assets/icon_mail.svg">
+                            </a>
 
                         </div>
-                    </div>
 
-                    <div class="column lg-col-6">
-                        <div class="background">
-                            <div class="circle-image  ">
-                                <img src="assets/katie.jpg">
-                            </div>
-                        </div>
                     </div>
-
                 </div>
-            </div>
-            <br>
 
-            <div class="section-heading parallax-container-skills">
+                <div class="column lg-col-6">
+                    <div class="background">
+                        <div class="circle-image  ">
+                            <img src="assets/katie.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <div id="skills" class="row">
                 <h2 class="red">Skills to pay the bills</h2>
 
                 <hr class="red-hr">
-                <div id="skills" class="row">
-                    <br>
-                    <div class="circle-container">
-                        <div class="circle ">
-                            HTML
-                        </div>
 
-                        <div class="circle">
-                            JavaScript
-                        </div>
-
-                        <div class="circle ">
-                            React
-                        </div>
-                        <div class="circle ">
-                            Node
-                        </div>
-                        <div class="circle ">
-                            jQuery
-                        </div>
-
-                        <br>
-
-                        <div class="circle">
-                            Underscore
-                        </div>
-                        <div class="circle ">
-                            Backbone
-                        </div>
-                        <div class="circle ">
-                            CSS
-                        </div>
-                        <div class="circle ">
-                            Rails
-                        </div>
-                        <div class="circle ">
-                            Ruby
-                        </div>
-
-                        <br>
-
-                        <div class="circle ">
-                            SQL
-                        </div>
-                        <div class="circle ">
-                            Git
-                        </div>
-                        <div class="circle ">
-                            Agile
-                        </div>
-                        <div class="circle ">
-                            TDD
-                        </div>
-                        <div class="circle ">
-                            OOP
-                        </div>
+                <br>
+                <div class="circle-container">
+                    <div class="circle ">
+                        HTML
                     </div>
 
-                </div>
+                    <div class="circle">
+                        JavaScript
+                    </div>
 
+                    <div class="circle ">
+                        React
+                    </div>
+                    <div class="circle ">
+                        Node
+                    </div>
+                    <div class="circle ">
+                        jQuery
+                    </div>
+
+                    <br>
+
+                    <div class="circle">
+                        Underscore
+                    </div>
+                    <div class="circle ">
+                        Backbone
+                    </div>
+                    <div class="circle ">
+                        CSS
+                    </div>
+                    <div class="circle ">
+                        Rails
+                    </div>
+                    <div class="circle ">
+                        Ruby
+                    </div>
+
+                    <br>
+
+                    <div class="circle ">
+                        SQL
+                    </div>
+                    <div class="circle ">
+                        Git
+                    </div>
+                    <div class="circle ">
+                        Agile
+                    </div>
+                    <div class="circle ">
+                        TDD
+                    </div>
+                    <div class="circle ">
+                        OOP
+                    </div>
+                </div>
 
             </div>
 
+
+        </div>
+
+        <div class="project">
             <div class="section-heading">
                 <h2 id="projects" class="red">Latest projects</h2>
                 <hr class="red-hr">
@@ -191,15 +206,15 @@
 
             <div>
 
-                <div class="col" data-bottom-center="transform: translateY(100%);" data-center-center="transform: translateY(0%);">
-
+                <div class="col">
                     <a href="https://sharevego-app.herokuapp.com/"><img class="project-images" src="assets/WasteNot.png" /></a>
 
-                    <!-- <img  src="assets/WasteNot.png" alt=""> -->
+
                     <h3 class="red">WasteNot</h3>
                     <br>
                     <hr class="red-hr">
-                    <p class="black">A group project ( Lynda Ly & Fiona McCawley) where we built a community app to help tackle food waste by sharing surplus food with people geographical close to you. </p>
+                    <p class="black">A group project  where we built a community app to help tackle
+                        food waste by sharing surplus food with people geographical close to you. Built with <a class="black" href="http://www.fionamccawley.com" target="_blank">Fiona McCawley</a> & <a class="black" href="https://lynly.github.io/" target="_blank">Lynda Ly.</a></p>
 
                     <a href="https://sharevego-app.herokuapp.com/" class="button" target="_blank">
                         <p>live demo</p>
@@ -209,12 +224,14 @@
                     </a>
                 </div>
 
-                <div class="col" data-bottom-center="transform: translateY(100%);" data-center-center="transform: translateY(0%);">
+                <div class="col">
                     <a href="https://katiepetersonn.github.io/tictactoe/"><img class="project-images" src="assets/tictactoe.png" /></a>
                     <h3 class="red">Tic-tac-toe</h3>
                     <br>
                     <hr class="red-hr ">
-                    <p>My first assignment was to make a functional Tic Tac Toe game. I built a dynamic game that allows two players to compete against each other.</p>
+                    <p class="black">My first assignment was to make a functional Tic Tac Toe game. I built a dynamic game that allows two players to compete against each other.</p>
+                    <p></p>
+                    <br>
 
                     <a href="https://katiepetersonn.github.io/tictactoe/" class="button" target="_blank">
                         <p>live demo</p>
@@ -229,7 +246,7 @@
                     <h3 class="red">TandemTech</h3>
                     <br>
                     <hr class="red-hr">
-                    <p>I wanted to build a tutoring application for people wanting to learn to code so they can find tutors who can help and encourage them along the way.</p>
+                    <p class="black">I wanted to build a tutoring application for people wanting to learn to code so they can find tutors who can help and encourage them along the way.</p>
 
                     <a href="https://tandem-tech-app.herokuapp.com/" class="button" target="_blank">
                         <p>live demo</p>
@@ -244,7 +261,7 @@
                     <h3 class="red">Dribble</h3>
                     <br>
                     <hr class="red-hr">
-                    <p class>Re-created the popular design web application Dribble. Allows creatives to share their projects with the community and provide each other with feedback.</p>
+                    <p class="black">Re-created the popular design web application Dribble. Allows creatives to share their projects with the community and provide each other with feedback.</p>
 
                     <a href="https://dribble-app.herokuapp.com/" class="button" target="_blank">
                         <p>live demo</p>
@@ -254,49 +271,51 @@
                     </a>
                 </div>
             </div>
+        </div>
 
 
-            <div class="contact parallax-container-contact">
-                <br>
-                <h2 id="contact" class="red">Say Hello</h2>
-                <hr class="red-hr">
-                <div class="icons">
-                    <a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing">
-                        <img src="assets/document.png" alt="" width="35px">
-                    </a>
-                    <a href="https://github.com/katiepetersonn">
-                        <img src="assets/github.svg" alt="" width="35px">
-                    </a>
-                    <a href="https://twitter.com/katiepeters0n">
-                        <img src="assets/social_twitter_circle.svg" alt="">
-                    </a>
-                    <a href="http://instagram.com/katiepeters0n">
-                        <img src="assets/social_instagram_circle.svg" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/in/katie-peterson-9b568957?trk=hp-identity-photo">
-                        <img src="assets/social_linkedin_circle.svg" alt="">
-                    </a>
-                    <a href="mailto:katie.peterson19@gmail.com">
-                        <img src="assets/icon_mail.svg" alt="">
-                    </a>
 
-                </div>
+        <div class="contact parallax-container-contact">
+            <br>
+            <h2 id="contact" class="red">Say Hello</h2>
+            <hr class="red-hr">
+            <div class="icons">
+                <a href="https://drive.google.com/file/d/0B8DasuIOzZ2uU2poYjV0YnZSQnM/view?usp=sharing">
+                    <img src="assets/document.png" alt="" width="35px">
+                </a>
+                <a href="https://github.com/katiepetersonn">
+                    <img src="assets/github.svg" alt="" width="35px">
+                </a>
+                <a href="https://twitter.com/katiepeters0n">
+                    <img src="assets/social_twitter_circle.svg" alt="">
+                </a>
+                <a href="http://instagram.com/katiepeters0n">
+                    <img src="assets/social_instagram_circle.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/katie-peterson-9b568957?trk=hp-identity-photo">
+                    <img src="assets/social_linkedin_circle.svg" alt="">
+                </a>
+                <a href="mailto:katie.peterson19@gmail.com">
+                    <img src="assets/icon_mail.svg" alt="">
+                </a>
 
             </div>
-            <footer>
-                 <p>© Katie Peterson 2017. All rights reserved.</p>
-
-            </footer>
-
-            <script src="js/jquery.js"></script>
-            <script src="js/skrollr.js"></script>
-            <script src="js/main.js"></script>
-            <!-- <i class="devicon-amazonwebservices-original"></i> -->
-            <script>
-            smoothScroll.init();
-</script>
 
         </div>
+        <footer>
+            <p>© Katie Peterson 2017. All rights reserved.</p>
+
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <i class="devicon-amazonwebservices-original"></i> -->
+        <script>
+        smoothScroll.init();
+</script>
+
+    </div>
 
 
 </body>

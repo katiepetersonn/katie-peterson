@@ -1,5 +1,12 @@
 console.log("hello");
 
+function openNav() {
+  document.getElementById("side-nav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("side-nav").style.width = "0";
+}
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
